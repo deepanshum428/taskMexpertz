@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 const Layout = () => {
@@ -15,6 +15,14 @@ const Layout = () => {
   return (
     <div>
       <Outlet />
+      <div className="flex justify-around text-blue-500 border ">
+        <NavLink to={"/"}>
+          <div className="bg-black px-2 py-1 rounded">Previous</div>
+        </NavLink>
+        <NavLink to={"/story"}>
+          <div className="bg-black  px-2 py-1 rounded">Next</div>
+        </NavLink>
+      </div>
     </div>
   );
 };

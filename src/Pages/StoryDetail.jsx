@@ -18,7 +18,7 @@ function StoryDetails() {
     <div className="min-h-screen bg-gradient-to-br from-[#0b1026] via-[#1b2a4e] to-[#2a3f6f] p-6 text-white">
       <div className="max-w-4xl mx-auto">
         <img
-          src={`https://ik.imagekit.io/dev24/${data.Image[0]}`}
+          src={`https://ik.imagekit.io/dev24/${data.Image}`}
           className="w-full h-64 object-cover rounded-xl mb-6"
         />
 
